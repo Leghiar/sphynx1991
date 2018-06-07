@@ -11,7 +11,7 @@ var colors = require('colors/safe');
 bot.login(process.env.TOKEN)
 
 bot.on('ready', function ()  {
-  bot.user.setGame("Command: $help");
+  bot.user.setActivity("Command: $help");
   console.log('Connected'.green);
 });
 
