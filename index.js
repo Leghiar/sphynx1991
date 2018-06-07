@@ -64,7 +64,7 @@ footer : {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'help') {
-    msg.channel.send('__Liste des commandes :__ \n $info \n $tt \n $fabriquant \n $cri \n $deut \n $met \n $vendu \n $quizz du sphinx');
+    msg.channel.send('__Liste des commandes :__ \n $info \n $tt \n $fabriquant \n $cri \n $deut \n $met \n $vendu \n $quizz du sphynx');
                                  }
 	                    });
 
@@ -110,5 +110,8 @@ bot.on('message', msg => {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'quizz du sphynx') {
-    msg.channel.send('Qu-est ce qui a 4 pattes le matin, 2 l après-midi et 3 le soir ?')     }
+    msg.channel.send('Qu-est ce qui a 4 pattes le matin, 2 l après-midi et 3 le soir ? \n Réponse :'),
+   if (message.content.startsWith(prefix + 'un homme')) {
+  mes.channel.send("Bravo ! tu viens de gagner une bouteille de rhum personnelle de Pharaon !");
+  }
                             });
