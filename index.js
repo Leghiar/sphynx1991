@@ -16,6 +16,53 @@ bot.on('ready', function ()  {
 });
 
 bot.on('message', msg => {
+  if (msg.content.startsWith (prefix + 'info')) {
+  message.delete;
+  message.channel.send("", {
+      embed: {
+          color : 0xE15306,
+  author :{name: message.author.name},
+          description : "",
+          title : "Information serveur",
+          fields : [
+              {
+   name : '**Nom du serveur**',
+   value : message.guild.name,
+   inline : true
+            },{
+   name : '**Propriétaire**',
+   value : message.guild.owner.user.tag,
+   inline : true
+ },{
+    name :'**Niveau de Vérification**'
+    value : message.guild.verificationLevel,
+    inline : true
+ },{
+    name : '**Région**',
+    value : message.guild.region,
+    inline : true
+ },{
+   name : '**Nombre de Membres**',
+   value : message.guild.memberCount,
+   inline : true
+ },{
+   name : '**Humain**',
+   value : message.guild.members.filter(m => m.user).size,
+   inline : true
+ },{
+   name : '**Bot**',
+   value : message.guild.members.filter(m => m.user.bot).size,
+   inline : true
+ }],
+},
+footer : {
+   text : 'Leghiar'
+          }
+    });
+}
+})
+
+bot.on('message', msg => {
   if (msg.content === prefix + 'help') {
     msg.channel.sendMessage('__Liste des commandes :__ \n \n $tt \n $fabriquant \n $cri \n $deut \n $met');
                                  }
