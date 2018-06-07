@@ -111,7 +111,7 @@ bot.on('message', msg => {
 bot.on('message', function(message) {
   if (message.content === prefix + 'quizz du sphynx') {
     message.channel.send('Qu-est ce qui a 4 pattes le matin, 2 l après-midi et 3 le soir ?');
- int (message === 'réponse ?') 
+ #int (message === 'réponse ?') 
     if (message.content === 'homme') {
   message.channel.send("Bravo ! tu viens de gagner une bouteille de rhum personnelle de Pharaon !");
                                                  }
