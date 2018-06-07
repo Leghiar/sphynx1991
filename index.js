@@ -34,7 +34,7 @@ bot.on('message', msg => {
    value : message.guild.owner.user.tag,
    inline : true
  },{
-    name :'**Niveau de Vérification**'
+    name :'**Niveau de Vérification**',
     value : message.guild.verificationLevel,
     inline : true
  },{
