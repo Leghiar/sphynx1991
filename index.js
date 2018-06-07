@@ -15,7 +15,7 @@ bot.on('ready', function ()  {
   console.log('Connected'.green);
 });
 
-bot.on('message', msg => {
+bot.on('message', function(message) {
   if (msg.content.startsWith(prefix + 'info')) {
   message.delete;
   message.channel.send("", {
