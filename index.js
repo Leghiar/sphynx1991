@@ -16,7 +16,7 @@ bot.on('ready', function ()  {
 });
 
 bot.on('message', function(message) {
-  if (msg.content.startsWith(prefix + 'info')) {
+  if (message.content.startsWith(prefix + 'info')) {
   message.delete;
   message.channel.send("", {
       embed: {
