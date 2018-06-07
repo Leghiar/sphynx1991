@@ -110,12 +110,13 @@ bot.on('message', msg => {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'quizz du sphynx') {
-    msg.channel.send('Qu-est ce qui a 4 pattes le matin, 2 l après-midi et 3 le soir ? \n Réponse :');
- int réponse: = sc.nextInt();
-    if (réponse: === 'homme') {
+    msg.channel.send('Qu-est ce qui a 4 pattes le matin, 2 l après-midi et 3 le soir ?');
+ int (msg === 'réponse ?') 
+    if (msg.content === 'homme') {
   mes.channel.send("Bravo ! tu viens de gagner une bouteille de rhum personnelle de Pharaon !");
-                                 }
+                                                 }
     else {	  
-	mes.channel.send("t'es nul recommence xD");  
+	mes.channel.send('tu es nul recommence xD');  
            }
-                            });
+  }                          
+  });
