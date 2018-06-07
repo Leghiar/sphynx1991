@@ -115,7 +115,7 @@ bot.on('message', function(message) {
 	});	
 
 bot.on('message', function(message) {
-    if (message.content === 'homme') {
+    if (message.content === prefixe + 'homme') {
   message.channel.send("Bravo ! tu viens de gagner une bouteille de rhum personnelle de Pharaon !");
                                                  }
  });
