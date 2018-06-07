@@ -16,7 +16,7 @@ bot.on('ready', function ()  {
 });
 
 bot.on('message', msg => {
-  if (msg.content.startsWith (prefix + 'info')) {
+  if (msg.content.startsWith(prefix + 'info')) {
   message.delete;
   message.channel.send("", {
       embed: {
@@ -64,7 +64,7 @@ footer : {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'help') {
-    msg.channel.sendMessage('__Liste des commandes :__ \n \n $tt \n $fabriquant \n $cri \n $deut \n $met');
+    msg.channel.sendMessage('__Liste des commandes :__ \n $info \n $tt \n $fabriquant \n $cri \n $deut \n $met');
                                  }
 	                    });
 
