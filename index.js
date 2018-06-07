@@ -8,7 +8,7 @@ var colors = require('colors');
 
 var colors = require('colors/safe');
 
-bot.login('NDUzNjU0MzczMjE0NTg0ODMy.DfiRrQ.1zRpBlxpJWuF6m7O-Lb3Sv3aVIw')
+bot.login(process.env.TOKEN)
 
 bot.on('ready', function ()  {
   bot.user.setGame("Command: $help");
