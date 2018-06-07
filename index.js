@@ -64,7 +64,7 @@ footer : {
 
 bot.on('message', msg => {
   if (msg.content === prefix + 'help') {
-    msg.channel.send('__Liste des commandes :__ \n $info \n $tt \n $fabriquant \n $cri \n $deut \n $met');
+    msg.channel.send('__Liste des commandes :__ \n $info \n $tt \n $fabriquant \n $cri \n $deut \n $met \n $vendu \n $quizz du sphinx');
                                  }
 	                    });
 
@@ -103,12 +103,12 @@ bot.on('message', msg => {
                             });
 
 bot.on('message', msg => {
-  if (msg.content === '$$vendu') {
+  if (msg.content === prefix + 'vendu') {
     msg.channel.send('**Adjugé vendu !**');
                                  }
                             });
 
 bot.on('message', msg => {
-  if (msg.content === 'Quizz du Sphynx') {
+  if (msg.content === prefix + 'quizz du sphynx') {
     msg.channel.send('Qu-est ce qui a 4 pattes le matin, 2 l après-midi et 3 le soir ?')     }
                             });
