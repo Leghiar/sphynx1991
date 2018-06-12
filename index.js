@@ -119,3 +119,9 @@ bot.on('message', function(message) {
   message.channel.send("Bravo ! tu viens de gagner une bouteille de rhum personnelle de Pharaon !");
                                                  }
  });
+
+bot.on('message', function(message) {
+    if (message.content === 'adieu l ami') {
+  message.channel.send("Adieu l'ami, dommage on t'aimait bien que ta flotte repose en paix et tes planètes en cendres.. :(");
+                                                 }
+ });
