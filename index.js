@@ -122,6 +122,6 @@ bot.on('message', function(message) {
 
 bot.on('message', function(message) {
     if (message.content === 'adieu l ami') {
-  message.channel.send("Adieu l'ami, dommage on t'aimait bien que ta flotte repose en paix et tes planètes en cendres.. :(");
+  message.channel.send("Adieu l'ami puisse Anubis guider tes pas, dommage on t'aimait bien que ta flotte repose en paix et tes planètes en cendres.. :(");
                                                  }
  });
