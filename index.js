@@ -128,5 +128,6 @@ bot.on('message', function(message) {
     if (message.content === 'Pharaon') {
   message.channel.send("Vive Pharaon le défenseur des BOTS !!! ");
                                                  }	
+  });
 	
  });
