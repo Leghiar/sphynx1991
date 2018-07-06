@@ -124,10 +124,11 @@ bot.on('message', function(message) {
     if (message.content === 'adieu l ami') {
   message.channel.send("Adieu l'ami puisse Anubis guider tes pas, dommage on t'aimait bien que ta flotte repose en paix et tes planètes en cendres.. :(");
                                                  }
+
+  });
+
 bot.on('message', function(message) {
     if (message.content === prefix + 'Pharaon') {
   message.channel.send("Vive Pharaon le défenseur des BOTS !!! ");
                                                  }	
   });
-	
- });
